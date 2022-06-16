@@ -1,0 +1,40 @@
+.slider {
+    border: 5px solid #fff;
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+}
+.slider .prev {
+    position: absolute;
+    left: 10px;
+    top: 170px;
+    cursor: pointer;
+    background-color: rgba(73, 66, 66, 0.5);
+    padding: 15px 7px;
+}
+.slider .prev i {
+    font-size: 30px;
+    color: rgb(247, 231, 231);
+}
+.slider .next {
+    position: absolute;
+    right: 10px;
+    top: 170px;
+    cursor: pointer;
+    background-color: rgba(73, 66, 66, 0.5);
+    padding: 15px 7px;
+}
+.slider .next i {
+    font-size: 30px;
+    color: rgb(247, 231, 231);
+}
+.wrap_picture {
+    display: flex;
+    width: 100%;
+    height: auto;
+    transition: all 0.3s linear;
+    /* overflow: hidden; */
+}
+.wrap_picture img {
+    width: 100%;
+}

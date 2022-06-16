@@ -1,0 +1,97 @@
+.header_tools > ul {
+    display: flex;
+    height: 100%;
+}
+.header_tools > ul > li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    min-width: 35px;
+}
+.header_tools > ul > li:hover > span {
+    color: rgb(124, 121, 121);
+}
+.header_tools > ul > li + li {
+    margin-left: 20px;
+}
+.header_tools ul li a {
+    text-decoration: none;
+    color: #000;
+}
+.header_tools ul li#search .search_toggle {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 0;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 0 5px #ccc;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s linear;
+    z-index: 99;
+}
+.header_tools ul li#search .search_toggle.active {
+    width: 270px;
+    height: auto;
+    opacity: 1;
+}
+.header_tools ul li#search .search_toggle .searchBox {
+    width: 270px;
+    height: auto;
+}
+.header_tools ul li#search .search_toggle .searchBox input {
+    outline: none;
+    border: none;
+    padding: 10px 0 10px 10px;
+    width: 85%;
+}
+.header_tools ul li#search .search_toggle button {
+    height: 100%;
+    width: 15%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+}
+.header_tools ul li#myAccount {
+    position: relative;
+}
+.header_tools ul li#myAccount:hover > .myAccount_menu {
+    top: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+.header_tools ul li#myAccount .myAccount_menu {
+    position: absolute;
+    top: 80%;
+    right: 0;
+    min-width: 150px;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s linear;
+    z-index: 99;
+}
+.header_tools ul li#myAccount .myAccount_menu ul li {
+    list-style: none;
+    font-size: 13px;
+    border-radius: 5px;
+}
+.header_tools ul li#myAccount .myAccount_menu ul li:hover {
+    background-color: #ccc;
+}
+.header_tools ul li#myAccount .myAccount_menu ul li a {
+    display: block;
+    padding: 10px;
+}
+.header_tools ul li#myAccount .myAccount_menu ul li span i {
+    margin-right: 5px;
+}

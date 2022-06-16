@@ -1,0 +1,7 @@
+.box .list_partners {
+    display: flex;
+}
+.partners {
+    width: 240px;
+    text-align: center;
+}

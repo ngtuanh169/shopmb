@@ -1,0 +1,16 @@
+button.back_to_top {
+    position: fixed;
+    color: #ccc;
+    right: -50px;
+    bottom: 50px;
+    padding: 12px 15px;
+    border-radius: 50%;
+    outline: none;
+    border: 2px solid #ccc;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+button.back_to_top.show {
+    right: 20px;
+}

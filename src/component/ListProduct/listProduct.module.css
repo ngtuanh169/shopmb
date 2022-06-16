@@ -1,0 +1,7 @@
+.box {
+    padding-top: 15px;
+}
+.list_product {
+    display: flex;
+    flex-wrap: wrap;
+}
