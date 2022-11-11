@@ -14,7 +14,7 @@
 /*     z-index: 11; */
 }
 
-/* .wapper::after {
+.wapper::after {
     position: absolute;
     content: '';
     background-image: linear-gradient(to right, transparent 0, rgb(241, 241, 241) 50%, transparent 100%);
@@ -22,8 +22,8 @@
     left: 0;
     height: 100%;
     width: 100%;
-    animation: move 2s linear alternate infinite;
-} */
+/*     animation: move 2s linear alternate infinite; */
+}
 
 .circle {
     border-radius: 50%;
