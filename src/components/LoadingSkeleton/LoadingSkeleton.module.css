@@ -17,11 +17,6 @@
 .wapper::after {
     position: absolute;
     content: '';
-<<<<<<< HEAD
-    /*     background-image: linear-gradient(to right, transparent 35%, rgb(241, 241, 241) 50%, transparent 75%); */
-=======
-/*     background-image: linear-gradient(to right, transparent 35%, rgb(241, 241, 241) 50%, transparent 75%); */
->>>>>>> 055b9125b1c4f227cb4e1fe1c979578003c69013
     top: 0;
     left: 0;
     height: 100%;
@@ -35,19 +30,13 @@
 }
 @keyframes move {
     0% {
-<<<<<<< HEAD
         /*         transform: translateX(-50%); */
         background-color: #d4d4d4;
     }
     100% {
-        /*         transform: translateX(50%); */
-=======
+
 /*         transform: translateX(-50%); */
         background-color: #d4d4d4;
     }
-    100% {
-/*         transform: translateX(50%); */
->>>>>>> 055b9125b1c4f227cb4e1fe1c979578003c69013
-        background-color: rgb(242, 242, 242);
-    }
+    
 }
