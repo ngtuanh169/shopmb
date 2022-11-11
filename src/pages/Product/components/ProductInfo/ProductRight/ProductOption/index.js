@@ -18,7 +18,7 @@ function ProductOption({ label, list, name, state, setState }) {
                     return (
                         <div
                             key={index}
-                            className={`${style.option} ${active == index && style.active}`}
+                            className={`${style.option} ${active === index && style.active}`}
                             onClick={() => {
                                 if (index !== active) {
                                     addClassActive(index);

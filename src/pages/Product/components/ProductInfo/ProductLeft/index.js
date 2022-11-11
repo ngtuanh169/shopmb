@@ -117,7 +117,7 @@ function ProductLeft({ loading }) {
                                     return (
                                         <div
                                             key={index}
-                                            className={`${style.silder_item} ${index == indexSlider && style.active} `}
+                                            className={`${style.silder_item} ${index === indexSlider && style.active} `}
                                             onClick={() => {
                                                 setIndexSlider(index);
                                             }}

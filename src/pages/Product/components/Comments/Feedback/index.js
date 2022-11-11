@@ -5,7 +5,6 @@ import commentApi from '../../../../../api/comment/commentApi';
 
 import Loading from '../../../../../components/Loading';
 import Button from '../../../../../components/Button';
-import avt from '../../../../../assets/images/icon/no-avt.png';
 import styles from './Feedback.module.css';
 function Feedback({ parentId }) {
     const productContext = useContext(productProvider);
