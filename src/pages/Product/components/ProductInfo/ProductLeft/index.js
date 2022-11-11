@@ -15,7 +15,6 @@ function ProductLeft({ loading }) {
     const [clientWidth, setClientWidth] = useState(0);
     const [indexSlider, setIndexSlider] = useState(0);
     const [likeProduct, setLikeProduct] = useState(false);
-    const [active, setActive] = useState(0);
 
     useEffect(() => {
         // check like Product
@@ -118,7 +117,7 @@ function ProductLeft({ loading }) {
                                     return (
                                         <div
                                             key={index}
-                                            className={`${style.silder_item} ${index == indexSlider && style.active} `}
+                                            className={`${style.silder_item} ${index === indexSlider && style.active} `}
                                             onClick={() => {
                                                 setIndexSlider(index);
                                             }}
