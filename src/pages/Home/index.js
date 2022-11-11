@@ -1,21 +1,19 @@
-import Slider from '../../component/Slider';
-import Service from '../../component/Service';
-import Category from '../../component/Category';
-import FeaturedProducts from '../../component/FeaturedProducts';
-import Blog from '../../component/Blog';
-import Partners from '../../component/Partners';
+import Slider from './components/Slider';
+import Service from './components/Service';
+import Category from './components/Category';
+import FeaturedProducts from './components/FeaturedProducts';
+import FeaturedComments from './components/FeaturedComments';
+import Blog from './components/Blog';
+import Partners from './components/Partners';
 function Home() {
     return (
         <>
             <Slider />
-            {/*dịch vụ*/}
             <Service />
-            {/* danh mục */}
             <Category />
-            {/* sản phẩm nổi bật */}
             <FeaturedProducts />
+            <FeaturedComments />
             <Blog />
-            {/* đối tác */}
             <Partners />
         </>
     );

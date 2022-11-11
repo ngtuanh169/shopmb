@@ -1,11 +1,12 @@
-import style from './footer.module.css';
-
-import logo from '../../../assets/images/icon/footer-logo.png';
+import Button from '../../../components/Button';
+import logo from '../../../assets/images/icon/logo1.png';
 import american_express from '../../../assets/images/icon/american_express.png';
 import discover from '../../../assets/images/icon/discover.png';
 import google_wallet from '../../../assets/images/icon/google_wallet.png';
 import paypal from '../../../assets/images/icon/paypal.png';
 import visa from '../../../assets/images/icon/visa.png';
+
+import style from './footer.module.css';
 function Footer() {
     return (
         <footer>
@@ -16,15 +17,13 @@ function Footer() {
                     </div>
                     <div className={style.footer_top_right}>
                         <input type="text" placeholder="Enter Your Email Address" />
-                        <button>
-                            <span>subscribe</span>
-                        </button>
+                        <Button gray1>subscribe</Button>
                     </div>
                 </div>
             </div>
             <div className={style.footer_content}>
                 <div className="row container margin_top50">
-                    <div className="col_sm3">
+                    <div className={`col_sm3 ${style.mobile}`}>
                         <div className={style.logo}>
                             <img src={logo} alt="" />
                         </div>
@@ -34,29 +33,29 @@ function Footer() {
                         <div className={style.social_block}>
                             <ul>
                                 <li className="bg-facebook">
-                                    <a href="#">
+                                    <Button circle1 gray1 href="#">
                                         <i className="fa-brands fa-facebook-f"></i>
-                                    </a>
+                                    </Button>
                                 </li>
                                 <li className="bg-twitter">
-                                    <a href="#">
+                                    <Button circle1 gray1 href="#">
                                         <i className="fa-brands fa-twitter"></i>
-                                    </a>
+                                    </Button>
                                 </li>
                                 <li className="bg-youtube">
-                                    <a href="#">
+                                    <Button circle1 gray1 href="#">
                                         <i className="fa-brands fa-youtube"></i>
-                                    </a>
+                                    </Button>
                                 </li>
                                 <li className="bg-googleplus">
-                                    <a href="#">
+                                    <Button circle1 gray1 href="#">
                                         <i className="fa-brands fa-google-plus-g"></i>
-                                    </a>
+                                    </Button>
                                 </li>
                                 <li className="bg-instagram">
-                                    <a href="#">
+                                    <Button circle1 gray1 href="#">
                                         <i className="fa-brands fa-instagram"></i>
-                                    </a>
+                                    </Button>
                                 </li>
                             </ul>
                         </div>

@@ -1,0 +1,39 @@
+.wapper {
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.wapper::before {
+    position: absolute;
+    content: '';
+    background-color: #dddddd;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+}
+
+.wapper::after {
+    position: absolute;
+    content: '';
+    background-image: linear-gradient(to right, transparent 35%, rgb(241, 241, 241) 50%, transparent 100%);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    animation: move 2s linear alternate infinite;
+    z-index: 12;
+}
+
+.circle {
+    border-radius: 50%;
+}
+@keyframes move {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(50%);
+    }
+}

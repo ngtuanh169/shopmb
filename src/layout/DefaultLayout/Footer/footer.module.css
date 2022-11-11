@@ -20,9 +20,15 @@ footer {
     font-weight: 500;
     text-transform: capitalize;
 }
+.row .footer_top_right {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
 .row .footer_top_right input {
-    padding: 10px;
-    width: 400px;
+    padding: 11px;
+    width: 70%;
+    max-width: 350px;
     border: none;
     outline: none;
     background-color: rgb(206, 202, 202);
@@ -31,19 +37,9 @@ footer {
     background-color: #fff;
 }
 .row .footer_top_right button {
-    padding: 10px;
-    width: 100px;
-    background-color: #353535;
-    border: none;
-    outline: none;
-}
-.row .footer_top_right button span {
-    color: #fff;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-.row .footer_top_right button:hover {
-    background-color: #585858;
+    width: 30%;
+    max-width: 100px;
+    border-radius: 0;
 }
 .footer_content {
     width: 100%;
@@ -81,19 +77,10 @@ footer {
 .footer_content .social_block ul li + li {
     margin-left: 10px;
 }
-.footer_content .social_block ul li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    background-color: #636262;
-}
 .footer_content .social_block ul li a:hover {
     background-color: transparent;
 }
-.footer_content .social_block ul li a:hover > i {
+.footer_content .social_block ul li a:hover i {
     color: #fff;
 }
 .footer_content .social_block ul li a i {
@@ -160,4 +147,29 @@ footer {
 }
 .footer_bottom .row .logo_payment ul li + li {
     margin-left: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .row .footer_top_left span {
+        font-size: 18px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .footer_top_right {
+        width: 100% !important;
+        justify-content: flex-start !important;
+        margin-top: 10px;
+    }
+    .footer_content .colum2 {
+        display: none;
+    }
+    .footer_bottom .row .logo_payment {
+        margin-top: 10px;
+    }
+    .mobile {
+        width: 100% !important;
+    }
 }
