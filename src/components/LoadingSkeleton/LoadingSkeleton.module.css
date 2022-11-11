@@ -17,6 +17,7 @@
 .wapper::after {
     position: absolute;
     content: '';
+    background-color: rgba(221, 221, 221);
     background-image: linear-gradient(to right, transparent 0, rgb(241, 241, 241) 50%, transparent 100%);
     top: 0;
     left: 0;
