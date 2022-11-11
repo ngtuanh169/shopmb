@@ -6,7 +6,7 @@
 .wapper::before {
     position: absolute;
     content: '';
-    background-color: #dddddd;
+    background-color: rgba(221, 221, 221, 0.411);
     top: 0;
     left: 0;
     height: 100%;
