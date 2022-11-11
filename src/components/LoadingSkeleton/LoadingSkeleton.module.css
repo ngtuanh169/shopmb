@@ -6,23 +6,24 @@
 .wapper::before {
     position: absolute;
     content: '';
-    background-color: rgba(221, 221, 221);
+    background-color: #dddddd;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-/*     z-index: 11; */
+    /* z-index: 11; */
 }
 
 .wapper::after {
     position: absolute;
     content: '';
-/*     background-image: linear-gradient(to right, transparent 0, rgb(241, 241, 241) 50%, transparent 100%); */
+    background-image: linear-gradient(to right, transparent 35%, rgb(241, 241, 241) 50%, transparent 100%);
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    animation: move 1s linear alternate infinite;
+    animation: move 2s linear alternate infinite;
+    /* z-index: 12; */
 }
 
 .circle {
@@ -30,11 +31,9 @@
 }
 @keyframes move {
     0% {
-/*         transform: translateX(-50%); */
-        background-color: rgba(221, 221, 221);
+        transform: translateX(-50%);
     }
     100% {
-/*         transform: translateX(50%); */
-        background-color:rgb(241, 241, 241);
+        transform: translateX(50%);
     }
 }
