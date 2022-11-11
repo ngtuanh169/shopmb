@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import categoryApi from '../../../../api/news/category';
-import { useParams, Link, NavLink } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 
-import FadeIn from '../../../../components/FadeIn';
 import styles from './MenuTop.module.css';
 function MenuTop() {
     const [listCategory, SetListCategory] = useState([]);
