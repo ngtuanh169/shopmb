@@ -11,19 +11,19 @@
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 11;
+    /* z-index: 11; */
 }
 
 .wapper::after {
     position: absolute;
     content: '';
-    background-image: linear-gradient(to right, transparent 35%, rgb(241, 241, 241) 50%, transparent 100%);
+    /*     background-image: linear-gradient(to right, transparent 35%, rgb(241, 241, 241) 50%, transparent 75%); */
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    animation: move 2s linear alternate infinite;
-    z-index: 12;
+    animation: move 1.5s linear alternate infinite;
+    /* z-index: 12; */
 }
 
 .circle {
@@ -31,9 +31,11 @@
 }
 @keyframes move {
     0% {
-        transform: translateX(-50%);
+        /*         transform: translateX(-50%); */
+        background-color: #d4d4d4;
     }
     100% {
-        transform: translateX(50%);
+        /*         transform: translateX(50%); */
+        background-color: rgb(242, 242, 242);
     }
 }

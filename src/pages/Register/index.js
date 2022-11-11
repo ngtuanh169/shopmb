@@ -55,7 +55,7 @@ function Register() {
     const handleOnChange = (e) => {
         const name = e.target.name;
         const value = e.target.value;
-        if (name == 'phoneNumber') {
+        if (name === 'phoneNumber') {
             value.slice(-1) % 1 === 0 && setFormValues({ ...formValues, [name]: value });
         } else {
             setFormValues({ ...formValues, [name]: value });

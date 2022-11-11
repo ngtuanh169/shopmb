@@ -15,7 +15,6 @@ function ProductLeft({ loading }) {
     const [clientWidth, setClientWidth] = useState(0);
     const [indexSlider, setIndexSlider] = useState(0);
     const [likeProduct, setLikeProduct] = useState(false);
-    const [active, setActive] = useState(0);
 
     useEffect(() => {
         // check like Product
