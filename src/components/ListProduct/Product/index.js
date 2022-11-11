@@ -53,8 +53,7 @@ function Product({ data }) {
         }
     };
     const handleLikePro = () => {
-        console.log(user.likeProducts);
-        const arrLikeProducts = JSON.parse(user.likeProducts);
+        const arrLikeProducts = user.likeProducts ?JSON.parse(user.likeProducts):[];
         !user.id && navigate('/dang_nhap');
         if (user.id && likeProduct) {
             const newArr = arrLikeProducts.filter((item) => item !== data.id);
