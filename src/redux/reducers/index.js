@@ -9,14 +9,9 @@ const cartPersistConfig = {
     key: 'cartShopMB',
     storage,
 };
-const userPersistConfig = {
-    key: 'userShopMB',
-    storage,
-};
 const rootReducer = combineReducers({
     toastMessage,
     cart: persistReducer(cartPersistConfig, cart),
-    // user: persistReducer(userPersistConfig, user),
     user,
 });
 
