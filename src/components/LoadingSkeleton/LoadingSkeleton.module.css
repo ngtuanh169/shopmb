@@ -11,7 +11,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 11;
+/*     z-index: 11; */
 }
 
 .wapper::after {
@@ -23,7 +23,7 @@
     height: 100%;
     width: 100%;
     animation: move 2s linear alternate infinite;
-    z-index: 12;
+/*     z-index: 12; */
 }
 
 .circle {
