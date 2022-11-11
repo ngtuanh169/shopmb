@@ -29,7 +29,7 @@ function FeaturedProducts() {
                     const response = await productApi.getByIdCategory({ limit: 8, id: idCategory });
                     setListProduct(response[0].data);
                     setMaxItem(response[0].max);
-//                     setLoading(false);
+                    setLoading(false);
                 } catch (error) {
                     console.log(error);
                 }
