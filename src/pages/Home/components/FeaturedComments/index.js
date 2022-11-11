@@ -19,7 +19,7 @@ function FeaturedComments() {
             setLoading(true);
             const res = await commentApi.getCommentsLike(payload);
             setListComments(res);
-//             setLoading(false);
+            setLoading(false);
         };
         getComments();
     }, []);
