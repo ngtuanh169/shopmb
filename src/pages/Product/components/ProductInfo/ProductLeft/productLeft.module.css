@@ -36,6 +36,7 @@
 .wapper .imgs .img {
     width: 100%;
     height: 100%;
+    padding: 10px;
 }
 .wapper .imgs .img img {
     width: 100%;
@@ -82,6 +83,7 @@
 .additional_carousel .slider_wrapper_outer .slider_wrapper .silder_item {
     width: 100%;
     border-radius: 5px;
+    padding: 10px;
     border: 1px solid transparent;
 }
 .additional_carousel .slider_wrapper_outer .slider_wrapper .silder_item.active {
