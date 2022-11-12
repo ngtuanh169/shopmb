@@ -85,12 +85,12 @@
     padding: 10px;
 }
 .table table tr td span{
-    max-with:250px;
-     -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
     display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
+    with:250px;
 }
 .table table tr td + td {
     border-left: 1px solid #ccc;
