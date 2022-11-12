@@ -9,9 +9,9 @@
     cursor: pointer;
     color: #888888;
 }
-.category_tabs ul li span{
+/* .category_tabs ul li span{
     display: flex;
-}
+} */
 .category_tabs ul li.select {
     color: blue;
 }
@@ -27,6 +27,6 @@
 }
 @media (min-width: 320px) and (max-width: 766px) {
     .category_tabs ul li {
-        padding: 0 25px;
+        padding: 0 10px;
     }
 }
