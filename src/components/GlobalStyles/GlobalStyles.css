@@ -103,6 +103,7 @@ select,
 input {
     outline: none;
     border: 1px solid #ccc;
+    padding: 15px;
     transition: all 0.3s linear;
 }
 textarea:focus,
