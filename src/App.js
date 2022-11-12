@@ -24,7 +24,7 @@ function App() {
             setLogin(false);
             const res = await userApi.getMe();
             dispatch(addUser(res[0]));
-            setLogin(true);
+//             setLogin(true);
         };
         accessToken && getMe();
     }, []);
