@@ -2,9 +2,11 @@ import FadeIn from '../../../../components/FadeIn';
 import Button from '../../../../components/Button';
 import style from './Modal.module.css';
 
-function Modal({ title, type, children, onSubmit, onClick }) {
+function Modal({ title, type, children, onSubmit, onClick,closeForm }) {
     return (
-        <FadeIn>
+           <>
+            <FadeIn onClick={closeForm}>
+            </FadeIn>
             <div className={style.wapper}>
                 <div className={style.row}>
                     <div className={style.close}>
@@ -29,7 +31,7 @@ function Modal({ title, type, children, onSubmit, onClick }) {
                     <div className={`${style.formContent} custom-scrollbars`}>{children}</div>
                 </div>
             </div>
-        </FadeIn>
+           </>
     );
 }
 
