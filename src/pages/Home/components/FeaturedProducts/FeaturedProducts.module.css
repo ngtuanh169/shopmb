@@ -26,10 +26,13 @@
 @media (min-width: 320px) and (max-width: 1024px) {
 }
 @media (min-width: 320px) and (max-width: 766px) {
-    .category_tabs ul {
-    justify-content: space-around;
-}
     .category_tabs ul li {
         padding: 0 10px;
     }
+}
+@media (min-width: 320px) and (max-width: 450px) {
+    .category_tabs ul {
+    justify-content: space-around;
+    }
+    
 }
