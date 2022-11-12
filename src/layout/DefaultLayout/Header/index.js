@@ -69,7 +69,6 @@ function Header() {
                 <div className={`${styles.row} container`}>
                     <div className={styles.iconMenu} onClick={() => SetShowMenu(true)}>
                         <i className="fa-solid fa-bars"></i>
-                        <strong>Menu</strong>
                     </div>
                     <div className={styles.header_logo}>
                         <Link to="/">
