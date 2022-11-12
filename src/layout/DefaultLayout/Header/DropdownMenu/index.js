@@ -54,7 +54,7 @@ function DropdownMenu() {
                                 <div key={item.id} className={styles.item}>
                                     <div className={styles.imageProduct}>
                                         <Link to={`/product/${item.id}`}>
-                                            <img src={`http://localhost/shopmb/assets/products/${item.img}`} />
+                                            <img src={`${process.env.REACT_APP_API_URL}/assets/products/${item.img}`} />
                                         </Link>
                                     </div>
                                     <div className={styles.content}>
