@@ -52,7 +52,7 @@ function FeaturedProducts() {
                                         setIdCategory(item.id);
                                     }}
                                 >
-                                    {item.name}
+                                    <span>{item.name}</span>
                                 </li>
                             );
                         })}
