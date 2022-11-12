@@ -55,6 +55,9 @@
 .iconMenu {
     display: none;
 }
+.iconMenu strong{
+    user-select: none;
+}
 .iconMenu i {
     padding-right: 5px;
     font-size: 15px;
