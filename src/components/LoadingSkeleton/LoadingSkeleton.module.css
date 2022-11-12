@@ -22,7 +22,6 @@
     height: 100%;
     width: 100%;
     animation: move 1.5s linear alternate infinite;
-    /* z-index: 12; */
 } */
 
 .wapper::after {
