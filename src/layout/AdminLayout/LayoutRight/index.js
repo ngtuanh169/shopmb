@@ -18,7 +18,7 @@ function LayoutRight({ children, setShowMenu, showMenu, isMobile }) {
                 {isMobile && (
                     <div className={styles.icon} onClick={() => setShowMenu((prev) => !prev)}>
                         <strong>
-                            <i className="fa-solid fa-bars"></i> Menu
+                            <i className="fa-solid fa-bars"></i>
                         </strong>
                     </div>
                 )}
