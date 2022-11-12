@@ -86,11 +86,10 @@
 }
 .table table tr td span{
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 1;
     display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
-    with:250px;
 }
 .table table tr td + td {
     border-left: 1px solid #ccc;
