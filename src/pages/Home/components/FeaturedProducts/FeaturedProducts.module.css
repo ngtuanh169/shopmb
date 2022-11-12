@@ -1,6 +1,6 @@
 .category_tabs ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 .category_tabs ul li {
     list-style: none;
@@ -26,6 +26,9 @@
 @media (min-width: 320px) and (max-width: 1024px) {
 }
 @media (min-width: 320px) and (max-width: 766px) {
+    .category_tabs ul {
+    justify-content: space-around;
+}
     .category_tabs ul li {
         padding: 0 10px;
     }
