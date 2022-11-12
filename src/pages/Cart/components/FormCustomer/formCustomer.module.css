@@ -5,12 +5,12 @@
 .title {
     padding: 10px 0;
 }
-.form_item {
+.formItem {
     width: 100%;
 }
-.form_item input,
-.form_item textarea,
-.form_item select {
+.formItem input,
+.formItem textarea,
+.formItem select {
     width: 100%;
     padding: 15px !important;
     outline: none;
@@ -28,7 +28,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.form_colums .form_item {
+.form_colums .formItem {
     width: 48%;
 }
 .btn {
@@ -44,12 +44,12 @@
     .wapper {
         width: 100%;
     }
-    .form_colums .form_item {
+    .form_colums .formItem {
         width: 100%;
     }
-    .form_item input,
-    .form_item textarea,
-    .form_item select {
+    .formItem input,
+    .formItem textarea,
+    .formItem select {
         max-width: 97%;
     }
 }
