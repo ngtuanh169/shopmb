@@ -7,7 +7,7 @@ function LayoutLeft({ showAll }) {
     return (
         <div className={styles.dashboard}>
             <div className={styles.logo}>
-                <Link to={'/admin'}>
+                <Link to={'/'}>
                     <img src={showAll ? Logo : Logo2} alt="" />
                 </Link>
             </div>
