@@ -135,7 +135,7 @@ function FormCustomer() {
                     <h3>Thông tin khách hàng</h3>
                 </div>
                 <div className={style.form_colums}>
-                    <div className={style.form_item}>
+                    <div className={style.formItem}>
                         <input
                             className={errors.fullName && 'error'}
                             type="text"
@@ -151,7 +151,7 @@ function FormCustomer() {
                             <p className="txt-error">{errors.fullName}</p>
                         </div>
                     </div>
-                    <div className={style.form_item}>
+                    <div className={style.formItem}>
                         <input
                             className={errors.phoneNumber && 'error'}
                             type="text"
@@ -168,7 +168,7 @@ function FormCustomer() {
                         </div>
                     </div>
                 </div>
-                <div className={style.form_item}>
+                <div className={style.formItem}>
                     <input
                         className={errors.email && 'error'}
                         type="text"
@@ -185,7 +185,7 @@ function FormCustomer() {
                     </div>
                 </div>
                 <div className={style.form_colums}>
-                    <div className={style.form_item}>
+                    <div className={style.formItem}>
                         <select
                             className={errors.cityCode && 'error'}
                             name="cityCode"
@@ -210,7 +210,7 @@ function FormCustomer() {
                             <p className="txt-error">{errors.cityCode}</p>
                         </div>
                     </div>
-                    <div className={style.form_item}>
+                    <div className={style.formItem}>
                         <select
                             className={errors.districtCode && 'error'}
                             name="districtCode"
@@ -236,7 +236,7 @@ function FormCustomer() {
                         </div>
                     </div>
                 </div>
-                <div className={style.form_item}>
+                <div className={style.formItem}>
                     <select
                         className={errors.wardCode && 'error'}
                         name="wardCode"
@@ -261,7 +261,7 @@ function FormCustomer() {
                         <p className="txt-error">{errors.wardCode}</p>
                     </div>
                 </div>
-                <div className={style.form_item}>
+                <div className={style.formItem}>
                     <input
                         className={errors.detailedAddress && 'error'}
                         type="text"
@@ -277,7 +277,7 @@ function FormCustomer() {
                         <p className="txt-error">{errors.detailedAddress}</p>
                     </div>
                 </div>
-                <div className={style.form_item}>
+                <div className={style.formItem}>
                     <textarea
                         rows="5"
                         type="text"
