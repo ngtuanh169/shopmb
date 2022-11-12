@@ -21,7 +21,9 @@ function InfoOrder({ data }) {
                             const pro_attr = JSON.parse(item.pro_attr);
                             return (
                                 <tr key={item.id}>
-                                    <td style={{ textAlign: 'center' }}>{item.pro_name}</td>
+                                    <td style={{ textAlign: 'center' }}>
+                                        <span>{item.pro_name}</span>
+                                    </td>
                                     <td>
                                         <img
                                             src={`${process.env.REACT_APP_API_URL}/assets/products/${item.pro_img}`}
