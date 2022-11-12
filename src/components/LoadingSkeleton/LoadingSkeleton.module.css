@@ -1,9 +1,10 @@
 .wapper {
     position: relative;
     border-radius: 7px;
+    background-color: #dddddd;
     overflow: hidden;
 }
-.wapper::before {
+/* .wapper::before {
     position: absolute;
     content: '';
     background-color: #dddddd;
@@ -12,9 +13,9 @@
     height: 100%;
     width: 100%;
     /* z-index: 11; */
-}
+} */
 
-.wapper::after {
+/* .wapper::after {
     position: absolute;
     content: '';
     top: 0;
@@ -23,20 +24,33 @@
     width: 100%;
     animation: move 1.5s linear alternate infinite;
     /* z-index: 12; */
-}
+} */
 
+.wapper::after {
+    -webkit-animation: move 2s linear infinite alternate;
+    animation: move 2s linear infinite alternate;
+    background: linear-gradient(90deg,#d8d8d8,#fff,#d8d8d8);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 .circle {
     border-radius: 50%;
 }
 @keyframes move {
     0% {
-        /*         transform: translateX(-50%); */
-        background-color: #d4d4d4;
+                transform: translateX(-50%);
+/*         background-color: #d4d4d4; */
+       
     }
     100% {
 
-/*         transform: translateX(-50%); */
-        background-color: rgb(242, 242, 242);
+        transform: translateX(50%);
+/*         background-color: rgb(242, 242, 242); */
+        
     }
     
 }
