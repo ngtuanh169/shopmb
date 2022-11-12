@@ -1,7 +1,7 @@
 .wapper {
     position: relative;
     border-radius: 7px;
-    background-color: #dddddd;
+    background-color: #d8d8d8;
     overflow: hidden;
 }
 /* .wapper::before {
