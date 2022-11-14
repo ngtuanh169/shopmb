@@ -10,9 +10,6 @@ function ActionBox({ placeholder, options, payload, setPayload, loading }) {
             if ( value !== payload.name) {
                 setPayload({ ...payload, page: 1, name: value });
             }
-//             if (value === '') {
-//                 setPayload({ ...payload, page: 1, name: value });
-//             }
         }, 700);
         return () => {
             clearTimeout(timeId);
