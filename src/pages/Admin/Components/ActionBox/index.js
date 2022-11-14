@@ -7,7 +7,7 @@ function ActionBox({ placeholder, options, payload, setPayload, loading }) {
     useEffect(() => {
         const timeId = setTimeout(() => {
             const value = searchValue.trim();
-            if (value && value !== payload.name) {
+            if ( value !== payload.name) {
                 setPayload({ ...payload, page: 1, name: value });
             }
 //             if (value === '') {
