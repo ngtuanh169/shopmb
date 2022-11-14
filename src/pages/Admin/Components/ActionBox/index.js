@@ -10,6 +10,9 @@ function ActionBox({ placeholder, options, payload, setPayload, loading }) {
             if (value && value !== payload.name) {
                 setPayload({ ...payload, page: 1, name: value });
             }
+//             if (value === '') {
+//                 setPayload({ ...payload, page: 1, name: value });
+//             }
         }, 700);
         return () => {
             clearTimeout(timeId);
@@ -34,6 +37,7 @@ function ActionBox({ placeholder, options, payload, setPayload, loading }) {
                             placeholder={placeholder}
                             value={searchValue}
                             onChange={(e) => {
+                                console.log('a');
                                 setSearchValue(e.target.value);
                             }}
                         />
