@@ -34,7 +34,6 @@ function ActionBox({ placeholder, options, payload, setPayload, loading }) {
                             placeholder={placeholder}
                             value={searchValue}
                             onChange={(e) => {
-                                console.log('a');
                                 setSearchValue(e.target.value);
                             }}
                         />
