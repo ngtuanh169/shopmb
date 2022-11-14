@@ -8,7 +8,7 @@ function ActionBox({ placeholder, options, payload, setPayload, loading }) {
         const timeId = setTimeout(() => {
             const value = searchValue.trim();
             if ( value && value !== payload.name) {
-                setPayload({ ...payload, page: 1, name: value });
+//                 setPayload({ ...payload, page: 1, name: value });
             }
         }, 700);
         return () => {
