@@ -30,7 +30,7 @@ function RatingProfile() {
     }, [payload]);
     return (
         <div className={styles.rating_profile}>
-            <Title text={'Nhận xét của tôi '} textCount={`${maxItem} đánh giá`} />
+            <Title text={'Đánh giá của tôi '} textCount={`${maxItem} đánh giá`} />
             <div className={styles.list_ratings}>
                 {loading ? (
                     <Loading count={payload.limit} />
