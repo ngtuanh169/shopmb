@@ -57,7 +57,7 @@ function FavouriteProduct() {
                                         <strong className="txt-error">
                                             {formatNumber(item.price - item.price * (item.sale / 100))}₫
                                         </strong>
-                                        {+item.sale > 0 && <s>9.990.000₫</s>}
+                                        {+item.sale > 0 && <s>{item.price}</s>}
                                     </div>
                                     <div className={styles.rating}>
                                         <ul>
