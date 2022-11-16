@@ -30,14 +30,14 @@ function HeaderTools() {
         page: 1,
         limit: 4,
     });
-    useEffect(() => {
-        if (countTotalCartRef.current) {
-            countTotalCartRef.current.classList.add(style.active);
-            setTimeout(() => {
-                countTotalCartRef.current.classList.remove(style.active);
-            }, 3000);
-        }
-    }, [countProductInCart]);
+//     useEffect(() => {
+//         if (countTotalCartRef.current) {
+//             countTotalCartRef.current.classList.add(style.active);
+//             setTimeout(() => {
+//                 countTotalCartRef.current.classList.remove(style.active);
+//             }, 3000);
+//         }
+//     }, [countProductInCart]);
     useEffect(() => {
         const timeId = setTimeout(() => {
             const value = payload.name.trim();
