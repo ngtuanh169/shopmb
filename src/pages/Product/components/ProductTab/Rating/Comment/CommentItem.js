@@ -25,7 +25,7 @@ function CommentItem({ data }) {
                 const payload = { rating_id: data.id, limit: 3 };
                 const res = await feedbackRatingApi.get(payload);
                 console.log(res);
-                setfeedbackRating(res[0].data);
+//                 setfeedbackRating(res[0].data);
                 setLoading(false);
             } catch (error) {
                 console.log(error);
