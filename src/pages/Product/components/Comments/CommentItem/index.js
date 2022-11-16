@@ -29,14 +29,14 @@ function CommentItem({ data }) {
             const newArr = arrLikeCmt.filter((item) => {
                 return item === data.id;
             });
-            setLike(newArr.length > 0);
+            newArr && setLike(newArr.length > 0);
         }
         if (user.dislikeComments) {
             const arrDislikeCmt = JSON.parse(user.dislikeComments);
             const newArr = arrDislikeCmt.filter((item) => {
                 return item === data.id;
             });
-            setDislike(newArr.length > 0);
+            newArr && setDislike(newArr.length > 0);
         }
     }, []);
     const handleSubmit = async () => {
