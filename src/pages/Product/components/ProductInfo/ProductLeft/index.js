@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect, useContext } from 'react';
+import {useNavigate} from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { updateUser } from '../../../../../redux/actions/user';
 import { productProvider } from '../../../productProvider';
@@ -8,6 +9,7 @@ import Button from '../../../../../components/Button';
 import Loading from './Loading';
 import style from './productLeft.module.css';
 function ProductLeft({ loading }) {
+    const navigate = useNavigate();
     const dispatch = useDispatch();
     const user = useSelector((state) => state.user);
     const productContext = useContext(productProvider);
@@ -67,6 +69,7 @@ function ProductLeft({ loading }) {
         }
     };
     const handleLikePro = () => {
+        !user && navigate('/dang_nhap');
         const arrLikeProducts = JSON.parse(user.likeProducts);
         if (user.id && likeProduct) {
             const newArr = arrLikeProducts.filter((item) => item !== productContext.id);
