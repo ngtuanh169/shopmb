@@ -80,7 +80,7 @@ function CommentItem({ data }) {
         }
     };
     const handleLikeCmt = (id) => {
-        if (user.id) {
+        if (!user.id) {
             return navigate('/dang_nhap');
         }
         const arrLikeCmt = user.likeComments ? JSON.parse(user.likeComments) : [];
@@ -118,7 +118,7 @@ function CommentItem({ data }) {
         }
     };
     const handleDislikeCmt = (id) => {
-        if (user.id) {
+        if (!user.id) {
             return navigate('/dang_nhap');
         }
         const arrLikeCmt = user.likeComments ? JSON.parse(user.likeComments) : [];
