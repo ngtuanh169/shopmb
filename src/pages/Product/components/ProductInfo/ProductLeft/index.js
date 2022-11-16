@@ -69,7 +69,7 @@ function ProductLeft({ loading }) {
         }
     };
     const handleLikePro = () => {
-        if (!user) {
+        if (!user.id) {
             return navigate('/dang_nhap');
         }
         const arrLikeProducts = JSON.parse(user.likeProducts);
