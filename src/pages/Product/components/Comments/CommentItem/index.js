@@ -1,4 +1,5 @@
 import { useState, useEffect, useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { addToastMessage } from '../../../../../redux/actions/toastMessage';
 import { updateUser } from '../../../../../redux/actions/user';
@@ -12,6 +13,7 @@ import Feedback from '../Feedback';
 import Button from '../../../../../components/Button';
 import styles from './CommentItem.module.css';
 function CommentItem({ data }) {
+    const navigate = useNavigate();
     const dispatch = useDispatch();
     const user = useSelector((state) => state.user);
     const productContext = useContext(productProvider);
@@ -78,6 +80,9 @@ function CommentItem({ data }) {
         }
     };
     const handleLikeCmt = (id) => {
+        if (user.id) {
+            return navigate('/dang_nhap');
+        }
         const arrLikeCmt = user.likeComments ? JSON.parse(user.likeComments) : [];
         const arrDislikeCmt = user.dislikeComments ? JSON.parse(user.dislikeComments) : [];
         if (dislike) {
@@ -113,6 +118,9 @@ function CommentItem({ data }) {
         }
     };
     const handleDislikeCmt = (id) => {
+        if (user.id) {
+            return navigate('/dang_nhap');
+        }
         const arrLikeCmt = user.likeComments ? JSON.parse(user.likeComments) : [];
         const arrDislikeCmt = user.dislikeComments ? JSON.parse(user.dislikeComments) : [];
         if (like) {
