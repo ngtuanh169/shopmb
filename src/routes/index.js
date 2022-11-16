@@ -40,6 +40,7 @@ const publicRoutes = [
     { path: '/dang_ky', component: Register, layout: null },
     { path: '/dang_nhap', component: Login, layout: null },
     { path: '/danh_muc/:id', component: CategoryProduct },
+     { path: '/product/:id', component: Product },
     { path: '/tin_tuc', component: News },
     { path: '/tin_tuc/danh_muc/:id', component: CategoryNewsCl },
     { path: '/xem_tin_tuc/:id', component: ViewNews },
@@ -47,7 +48,6 @@ const publicRoutes = [
     { path: '/error403', component: Error403, layout: null },
 ];
 const privateRoutes = [
-    { path: '/product/:id', component: Product },
     { path: '/lien_he', component: Contact },
     { path: '/gio_hang', component: Cart },
     { path: '/profile', component: Profile, layout: 'profile' },
