@@ -22,7 +22,7 @@ function ProductTab({ loading }) {
                         </li>
                     </ul>
                 </div>
-                {show ? <Description loading={loading} /> : <Rating />}
+                {show ? <Rating /> : <Description loading={loading} />}
             </div>
         </>
     );
