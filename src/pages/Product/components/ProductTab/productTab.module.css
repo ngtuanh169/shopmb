@@ -22,7 +22,7 @@
     color: #888888;
 }
 .nav_tab ul li.active {
-    color: #000;
+    color: blue;
     cursor: default;
 }
 .nav_tab ul li:hover {
