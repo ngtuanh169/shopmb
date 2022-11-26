@@ -22,13 +22,14 @@
     transition: all 0.3s linear;
 }
 .slider .wrap_picture .img {
+    border-radius: 7px;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 .slider .wrap_picture .img img {
     width: 100%;
     height: 100%;
-    border-radius: 7px;
     object-fit: cover;
     object-position: center;
 }
